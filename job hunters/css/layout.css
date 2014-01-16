@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+.totalcontainer{
+	margin:0 auto;
+	width:880px;
+	background:#fff;
+	}
+.topbandcont{
+	height:88px;
+	}
+.topbandcont ul li, .footercont ul li{
+	float:left;
+	cursor:pointer;
+	}
+.topbandcont ul li a{
+	color:#fff;
+	display:block;
+	text-decoration:none;
+	}
+.topbandL{
+	background:url(../images/topbandleft.png) no-repeat;
+	height:90px;
+	width:13px;
+	}
+.topbandC{
+	background:url(../images/topbandcenter.png) repeat-x;
+	height:90px;
+	width:854px;
+	}
+.topbandR{
+	background:url(../images/topbandright.png) no-repeat;
+	height:90px;
+	width:13px;
+	}
+.logo{
+	font:25px Arial, Helvetica, sans-serif;
+	color:#fff;
+	font-weight:bold;
+	float:left;
+	padding:30px 10px 0 0;
+	}
+.menutab{
+	float:left;
+	padding-top:63px;
+	}
+.menutab li{
+	padding-top:5px;
+	margin:0 2px;
+	color:#fff;
+	text-align:center;
+	background:url(../images/normaltab.png) no-repeat;
+	width:89px;
+	height:27px;
+	}
+.menutab li.active{
+	padding-top:5px;
+	margin:0 2px;
+	color:#000;
+	font-weight:bold;
+	text-align:center;
+	background:url(../images/activetab.png) no-repeat;
+	width:89px;
+	height:27px;
+	}
+.menutab li.active a{
+	color:#000;
+	font-weight:bold;
+	}
+.rightmenu{
+	color:#fff;
+	padding:5px;
+	float:right;
+	margin:10px;
+	}
+.bodycontainer{
+	background:url(../images/bodybg.png) repeat-y;
+	}
+.footerL{
+	background:url(../images/footerleft.png) no-repeat;
+	height:50px;
+	width:12px;
+	}
+.footerC{
+	background:url(../images/footercenter.png) repeat-x;
+	height:35px;
+	width:854px;
+	text-align:center;
+	color:#fff;
+	padding-top:15px;
+	}
+.footerR{
+	background:url(../images/footerright.png) no-repeat;
+	height:50px;
+	width:12px;
+	}
+.reportdiv{
+	margin:10px 30px;
+	}
+.reporttbl{
+	border:solid 1px #a0a0a0;
+	}
+.usrtr:hover{
+	background:#fffed1;
+	}

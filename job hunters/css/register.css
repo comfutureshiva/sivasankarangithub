@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+.frmcontainer{
+	margin:10px 10px 10px 0;
+	clear:both;
+	}
+.regsteps{
+	margin:10px 10px 20px 10px;
+	}
+.regsteps ul li{
+	padding:2px 20px;
+	float:left;
+	background:#e0e0e0;
+	margin-right:10px;
+	cursor:pointer;
+	border:solid 1px #9f9f9f;
+	}
+.regsteps ul li.current{
+	padding:2px 20px;
+	cursor:pointer;
+	background:#459be7;
+	float:left;
+	color:#fff;
+	font-weight:bold;
+	border:solid 1px #198aaf;
+	}
+.frmtitcont{
+	border:solid 1px transparent;
+	margin:0 20px 0 20px;
+	}
+.frmtitle{
+	color:#0c5377;
+	font-weight:bold;
+	float:left;
+	}
+.reqstar{
+	color:#F00;
+	}
+.reqtxt{
+	float:right;
+	}
+.frmfieldbg, .frmfielddisp{
+	background:#f6f6f6;
+	border:solid 1px #d4d4d4;
+	padding:5px;
+	margin:0 20px 0 20px;
+	}
+.frmfielddisp label{
+	width:20%;
+	float:left;
+	text-align:right;
+	}
+.frmfieldbg label{
+	width:20%;
+	float:left;
+	padding-top:3px;
+	text-align:right;
+	}
+.frmfieldbg em, .frmfielddisp em{
+	padding-left:7px;
+	text-align:left;
+	}
+.frmfielddisp em{	
+	font-weight:bold;
+	}
+.frmfieldbg div, .frmfielddisp div{
+	margin:10px 0;
+	}
+.frmtextbox{
+	width:200px;
+	}
+.smalltextbox{
+	width:70px;
+	}
+.hint{
+	font:11px Verdana, Geneva, sans-serif;
+	color:#474545;
+	}
+.butdiv{
+	text-align:center;
+	margin-right:15px;
+	}
+.buttoncls{
+	padding:opx 20px;
+	font-size:18px;
+	}
+#step1, #step2, #step3{
+	margin-bottom:20px;
+	}
+/***** home.php *********/
+.addtext{
+	font-size:18px;
+	color:#459be7;
+	margin-left:228px;
+	}
+.loginfrm{
+	width:350px;
+	float:left;
+	}
+.logincont{
+	padding:10px;
+	margin-left:200px;
+	}
+.newuser{
+	font-size:18px;
+	}
+.registerbut{
+	margin-top:20px;
+	}
+.regstatus{
+	background:#f6f6f6;
+	border:solid 1px #d4d4d4;
+	padding:5px;
+	margin: 0 30px;
+	font-weight:bold;
+	}

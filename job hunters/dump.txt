@@ -1,0 +1,24 @@
+mysql -u root
+ 
+create database jobhunters;
+
+use jobhunters;
+create table admintable(adminuser varchar(50), adminpass varchar(50));
+insert into admintable(adminuser, adminpass) values('administrator','aaa');
+
+create table useraccounts(email varchar(50) not null primary key, fname varchar(50), lname varchar(50),username varchar(50) not null,userpwd varchar(50) not null, confpwd varchar(50) not null);
+
+CREATE TABLE session_details( id varchar(50) NOT NULL default '', userid varchar(10) NOT NULL default '', ip varchar(20) NOT NULL default '', tm datetime NOT NULL default '0000-00-00 00:00:00', status char(3) NOT NULL default 'ON' ) TYPE=MyISAM;
+
+create table profilestatus(personal int(5) default -1, reference int(5) default -1, professional int(5) default -1, edu int(5) default -1, resume int(5) default -1, emailid varchar(50), foreign key(emailid) references useraccounts(email) on delete cascade);
+
+create table personaldetails(phone bigint(50),mobile bigint(50) not null, location char(50) not null,address varchar(50) not null, joblocation varchar(30) not null, fathername varchar(50) not null, mothername varchar(50) not null, religion varchar(50) not null, community varchar(50) not null, branch varchar(30) not null,native varchar(50) not null, naddu varchar(50) not null, pattam varchar(50) not null, kottam varchar(50) not null, emailid varchar(50), foreign key(emailid) references useraccounts(email) ON DELETE CASCADE);
+
+create table referencedetails(relativename varchar(50), relationship varchar(50), refermobile bigint(50) not null, referaddress varchar(50), referemail varchar(50), emailid varchar(50), foreign key(emailid) references useraccounts(email) on delete cascade);
+
+create table Professionaldetails(jobcateg varchar(50) not null, totalexpyear int(10) not null, totlaexpmonth int(10) not null, currentsallac int(10) not null, currentsalthousands int(10) not null, resumehead varchar(50) not null, emailid varchar(50), foreign key(emailid) references useraccounts(email) on delete cascade);
+
+create table edudetails(ug varchar(50) not null, ugcollege varchar(50), pg varchar(50), pgcollege varchar(50), phd varchar(50),phdcollege varchar(50), emailid varchar(50), foreign key(emailid) references useraccounts(email) on delete cascade);
+
+create table resumedetails(fileid int(11) not null auto_increment primary key, filename varchar(50) not null,filetype varchar(50) not null, filesize int(11) not null,filecontent longblob,emailid varchar(50), foreign key(emailid) references useraccounts(email) on delete cascade);
+
